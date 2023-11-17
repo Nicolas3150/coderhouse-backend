@@ -1,0 +1,33 @@
+<div class="Message">
+    <div class="div-delete">
+        <div id="div-delete-{{message._id}}"></div>
+    </div>
+    <div class="principal-message">
+        <div class="InfoUser">
+            <img class="avatar" src="{{message.author.avatar}}" alt="Avatar">
+            <div class="user">
+                <p class="email">{{message.author.email}}</p>
+                <p class="date">Enviado: {{message.date}}</p>
+            </div>
+        </div>
+        <p class="message">{{ message.message }}</p>
+    </div>
+    <div class="response-message">
+        {{#each response}}
+        <div class="InfoUser">
+            <img class="avatar" src="{{this.author.avatar}}" alt="Avatar">
+            <div class="user">
+                <p class="email">{{this.author.email}}</p>
+                <p class="date">Enviado: {{this.date}}</p>
+            </div>
+        </div>
+        <div class="res">
+            <p class="response">{{ this.message }}</p>
+            <div id="div-delete-res-{{this._id}}"></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="responder" id="response-{{message._id}}">
+        <button class="btn" id="btn-link-{{message._id}}">responder</button>
+    </div>
+</div>

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 5vw;
+  gap: 5vw;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+  gap: 20px;
+}
+
+.Message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.InfoUser {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+}
+
+.email {
+  color: #0e1afd;
+  display: inline;
+}
+
+.date {
+  color: #a93736;
+  font-size: small;
+}
+
+.message,
+.response {
+  margin-left: 40px;
+}
+
+.response-message {
+  margin: 10px 25px 0 150px;
+  /* padding: 10px; */
+  border-radius: 10px;
+  background-color: rgb(244, 244, 244);
+}
+
+.res {
+  display: flex;
+  gap: 100px;
+}
+
+.div-delete {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.responder {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.responder .res_message {
+  padding: 5px 200px 5px 0;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 20px;
+  align-items: center;
+}
+
+#chat .formDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#chat .formDiv label {
+  margin-left: 20px;
+}
+
+#chat input {
+  padding: 5px 20px;
+  width: 50%;
+}
+
+.btn,
+#chat .btn {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.res-input {
+  width: 50%;
+}
+
+.eliminar-respuesta {
+  color: rgb(77, 77, 77);
+  background: none;
+  border: none;
+}
+
+.eliminar-respuesta:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.eliminar {
+  color: red;
+  background: none;
+  border: solid 2px red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.eliminar:hover {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+/* TABLA */
+
+table {
+  background-color: #343a40;
+  color: white;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+td img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.logout-btn {
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  /* color: #0e1afd; */
+  color: red;
+  text-decoration: underline;
+}

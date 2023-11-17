@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form id="formLogin">
+      <input type="email" placeholder="Email" id="email" />
+      <input type="password" placeholder="Contraseña" id="password" />
+      <button type="submit">Acceder</button>
+    </form>
+
+    <script>
+      const formLogin = document.querySelector("#formLogin");
+      const email = document.querySelector("#email");
+      const password = document.querySelector("#password");
+      document.addEventListener("DOMContentLoaded", async (e) => {
+        const resToken = await fetch("/api/auth/refresh", {
+          credentials: "include",
+        });
+        if (resToken.ok) {
+          window.location.href = "/api/chat";
+        }
+      });
+      formLogin.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        try {
+          const res = await fetch("/api/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: email.value,
+              password: password.value,
+            }),
+          });
+          const { token, errors } = await res.json();
+          if (token) {
+            window.location.href = "/api/chat";
+          }
+          alert(errors[0].msg);
+        } catch (error) {
+          console.log(error);
+        }
+      });
+    </script>
+  </body>
+</html>

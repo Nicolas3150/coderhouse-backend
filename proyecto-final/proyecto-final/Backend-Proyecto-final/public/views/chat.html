@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="btn btn-info my-5" onclick="volver()">Ver info</button>
+      <button class="logout-btn" id="logout">Logout</button>
+    </nav>
+    <div class="messageContainer"></div>
+    <div>
+      <form id="chat">
+        <input
+          type="text"
+          placeholder="Escriba su mensaje..."
+          id="message"
+          name="message"
+          required
+        />
+        <input type="submit" value="Enviar" class="btn" />
+      </form>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../../js/connectSocket.js"></script>
+  <script>
+    function redireccionar(pagina) {
+      location.href = pagina;
+    }
+
+    function volver() {
+      redireccionar("/api/info");
+    }
+  </script>
+</html>

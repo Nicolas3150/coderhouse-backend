@@ -1,0 +1,17 @@
+{
+  "name": "clienthttp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "user.js",
+  "type": "module",
+  "scripts": {
+    "test": "node ./index.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "axios": "^1.1.3"
+  }
+}

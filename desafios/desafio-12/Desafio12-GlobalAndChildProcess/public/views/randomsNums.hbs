@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Cantidad de apariciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each nums}}
+        <tr>
+            {{#each this}}
+                <td>{{this}}</td>
+            {{/each}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

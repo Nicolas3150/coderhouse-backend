@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container my-5">
+      <div class="jumbotron">
+        <h1>SIGNUP</h1>
+        <br />
+        <form method="POST" enctype="multipart/form-data" id="updateAvatar">
+          <input type="file" id="avatar-img" name="avatar" required />
+        </form>
+        <br />
+        <form
+          enctype="multipart/form-data"
+          id="formRegister"
+          class="form"
+          role="form"
+          autocomplete="off"
+        >
+          <div class="form-group">
+            <label>Username</label>
+            <input
+              type="text"
+              class="form-control registerForm"
+              name="username"
+              placeholder="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              class="form-control registerForm"
+              name="email"
+              placeholder="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input
+              type="password"
+              class="form-control registerForm"
+              name="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-control registerForm"
+              name="firstName"
+              placeholder="first name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Apellido</label>
+            <input
+              type="text"
+              class="form-control registerForm"
+              name="lastName"
+              placeholder="last name"
+              required
+            />
+          </div>
+          <!--  -->
+          <!-- <div class="form-group">
+          <input type="text" class="form-control" name="address" placeholder="address" required />
+        </div> -->
+          <div class="form-group">
+            <label>Pais</label>
+            <input
+              type="text"
+              class="form-control address"
+              name="pais"
+              placeholder="pais"
+              required
+            />
+            <label>Provincia</label>
+            <input
+              type="text"
+              class="form-control address"
+              name="provincia"
+              placeholder="provincia"
+              required
+            />
+            <label>Ciudad</label>
+            <input
+              type="text"
+              class="form-control address"
+              name="ciudad"
+              placeholder="ciudad"
+              required
+            />
+            <label>Calle</label>
+            <input
+              type="text"
+              class="form-control address"
+              name="calle"
+              placeholder="calle"
+              required
+            />
+            <label>Numero</label>
+            <input
+              type="number"
+              class="form-control address"
+              name="numero"
+              placeholder="numero"
+              required
+            />
+          </div>
+          <!--  -->
+          <div class="form-group">
+            <label>Numero de telefono</label>
+            +54
+            <input
+              type="text"
+              class="form-control registerForm"
+              name="phoneNumber"
+              placeholder="phone"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Dia</label>
+            <input
+              type="number"
+              class="form-control birthday"
+              name="day"
+              placeholder=""
+              required
+            />
+            <label>Mes</label>
+            <input
+              type="number"
+              class="form-control birthday"
+              name="month"
+              placeholder=""
+              required
+            />
+            <label>Año</label>
+            <input
+              type="number"
+              class="form-control birthday"
+              name="year"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-primary my-3"
+              type="submit"
+              id="btnFormRegister"
+              value="Singup"
+            />
+          </div>
+        </form>
+        <hr />
+        <button class="btn btn-light my-3" onclick="goLogin()">
+          IR AL LOGIN
+        </button>
+      </div>
+    </div>
+    <script>
+      function redireccionar(pagina) {
+        location.href = pagina;
+      }
+
+      function goLogin() {
+        redireccionar("/login");
+      }
+    </script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

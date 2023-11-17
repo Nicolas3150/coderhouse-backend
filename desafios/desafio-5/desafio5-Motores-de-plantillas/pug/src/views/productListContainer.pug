@@ -1,0 +1,21 @@
+extends main.pug
+
+block productList 
+    div(class="productContainer")
+        h1 Productos: 
+        if productos.length !== 0
+            table
+                thead 
+                    tr 
+                        th Nombre
+                        th Precio 
+                        th Foto
+                tbody
+                    each prod in productos
+                        tr 
+                            td #{ prod.title }
+                            td #{ prod.price }
+                            td 
+                               img(src=prod.thumbnail, alt=prod.thumbnail) 
+        else
+            h2 No hay productos

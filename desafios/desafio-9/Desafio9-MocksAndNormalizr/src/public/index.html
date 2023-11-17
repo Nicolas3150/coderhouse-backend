@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="productContainer" id="productContainer">
+        <div id="prodForm"></div>
+        <div id="prodTable"></div>
+    </div>
+    <div class="productContainer">
+        <h1>Centro de mensajes</h1>
+        <h2 id="compresion"></h2>
+        <form id="chat">
+            <input type="text" placeholder="example@gmail.com" id="email">
+            <input type="text" placeholder="Your name" id="firstName">
+            <input type="text" placeholder="Your lastname" id="lastName">
+            <input type="number" id="age">
+            <input type="text" placeholder="Your alias" id="alias">
+            <input type="text" placeholder="Your avatar" id="avatar">
+            <div class="messageContainer"></div>
+            <input type="text" placeholder="Escriba su mensaje..." id="messageInfo">
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/message.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %> 
+    <div class="productContainer">
+        <h1>Ingrese su producto</h1>
+    
+        <form action="/productos" method="POST">
+            <div class="formDiv">
+                <label><i>Nombre</i></label>
+                <input type="text" name="title" required>
+            </div>
+            <div class="formDiv">
+                <label><i>Precio</i></label>
+                <input type="number" name="price" required>
+            </div>
+            <div class="formDiv">
+                <label><i>Foto URL</i></label>
+                <input type="text" name="thumbnail" required>
+            </div>
+    
+            <input type="submit" value="Agregar producto" class="btn">
+        </form>
+    </div>
+</body>
+</html>

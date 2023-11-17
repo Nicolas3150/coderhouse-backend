@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.productContainer {
+    background-color: #E9ECEF;
+    padding: 20px 10%;
+    text-align: center;
+    margin: 20px 10%;
+    border-radius: 10px;
+}
+
+.productContainer h1 {
+    color: #0E1AFD;
+}
+
+.productContainer h2 {
+    color: #916A09;
+    background-color: #FFF3CD;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 20px;
+    align-items: center;
+}
+
+form .formDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form .formDiv label {
+    margin-left: 20px;
+}
+
+form input {
+    padding: 5px 20px;
+}
+
+form .btn {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* TABLA */
+
+table{
+    background-color: #343A40;
+    color: white;
+    width: 100%;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+td img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* CHAT */
+
+.message{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.email{
+    color: #0E1AFD;
+    display: inline;
+}
+
+.date{
+    color: #A93736;
+    display: inline;
+}
+
+.messageInfo{
+    color: #259126;
+    display: inline;
+}
+
+#messageInfo{
+    width: 50%;
+}
+
+.messageContainer{
+    width: 100%;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}

@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %> 
+        <div class="productContainer">
+            <% if(productos.length){ %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% productos.map(prod => { %>
+                            <tr>
+                                <td><%= prod.title %> </td>
+                                <td><%= prod.price %></td>
+                                <td><img src="<%= prod.thumbnail %>" alt=""></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            <% } else { %>
+                <h2>No hay productos</h2>
+            <% } %> 
+        </div>
+</body>
+</html>

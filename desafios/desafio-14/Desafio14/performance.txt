@@ -1,0 +1,5 @@
+Compresion con gzip
+https://docs.google.com/document/d/1Ez2r1Ff9dquQz3h2gqdH0rUtJ8foZfYTGgsSG_1btsg/edit?usp=sharing
+
+Analisis de performance
+https://docs.google.com/document/d/1psG9MHPoLdyy-1ki1lRGcde6hkx7uYmCdbUzxzEx4E8/edit?usp=sharing

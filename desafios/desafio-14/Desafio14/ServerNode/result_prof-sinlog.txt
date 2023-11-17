@@ -1,0 +1,389 @@
+Statistical profiling result from sinlog-v8.log, (3752 ticks, 4 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   2734   72.9%          C:\WINDOWS\SYSTEM32\ntdll.dll
+    926   24.7%          C:\Program Files\nodejs\node.exe
+      2    0.1%          C:\WINDOWS\System32\KERNELBASE.dll
+      2    0.1%          C:\WINDOWS\System32\KERNEL32.DLL
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     10    0.3%   11.4%  LazyCompile: *parse C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+      8    0.2%    9.1%  LazyCompile: *wrap C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+      6    0.2%    6.8%  LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+      5    0.1%    5.7%  LazyCompile: *resolve node:path:158:10
+      4    0.1%    4.5%  RegExp: (?:\r\n?|\n).*
+      4    0.1%    4.5%  LazyCompile: *SourceNode_walk C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\source-map\lib\source-node.js:221:53
+      3    0.1%    3.4%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      3    0.1%    3.4%  RegExp: [ \t]+$
+      3    0.1%    3.4%  LazyCompile: *opcode C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:347:26
+      2    0.1%    2.3%  RegExp: \r?\n\s*?$
+      2    0.1%    2.3%  LazyCompile: *setupParams C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1034:36
+      2    0.1%    2.3%  LazyCompile: *compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    0.0%    1.1%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    1.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    1.1%  RegExp: ^(?:\{\{(~)?\^)
+      1    0.0%    1.1%  RegExp: ^(?:[\/.])
+      1    0.0%    1.1%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      1    0.0%    1.1%  RegExp: ^(?:'(\\[']|[^'])*')
+      1    0.0%    1.1%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    1.1%  LazyCompile: *step C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      1    0.0%    1.1%  LazyCompile: *resolvePath C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      1    0.0%    1.1%  LazyCompile: *readFile node:fs:373:18
+      1    0.0%    1.1%  LazyCompile: *preparePath C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:63:21
+      1    0.0%    1.1%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    1.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      1    0.0%    1.1%  LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      1    0.0%    1.1%  LazyCompile: *mergeSource C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:267:36
+      1    0.0%    1.1%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1    0.0%    1.1%  LazyCompile: *aliasable C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1006:32
+      1    0.0%    1.1%  LazyCompile: *SourceNode_add C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\source-map\lib\source-node.js:172:51
+      1    0.0%    1.1%  LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\source-map\lib\source-node.js:174:29
+      1    0.0%    1.1%  LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:15:44
+      1    0.0%    1.1%  LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:251:47
+      1    0.0%    1.1%  LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1    0.0%    1.1%  Function: ^tryStatSync node:internal/modules/esm/resolve:184:3
+      1    0.0%    1.1%  Function: ^step C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:23:22
+      1    0.0%    1.1%  Function: ^setHeader node:_http_outgoing:574:57
+      1    0.0%    1.1%  Function: ^serveStatic C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\serve-static\index.js:72:31
+      1    0.0%    1.1%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    1.1%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    1.1%  Function: ^finish C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\glob\common.js:122:17
+      1    0.0%    1.1%  Function: ^createWriteWrap node:internal/stream_base_commons:109:25
+      1    0.0%    1.1%  Function: ^assertSize node:internal/crypto/random:75:20
+      1    0.0%    1.1%  Function: ^_log C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\log4js\lib\logger.js:106:7
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+     84    2.2%   95.5%  JavaScript
+      0    0.0%    0.0%  C++
+     26    0.7%   29.5%  GC
+   3664   97.7%          Shared libraries
+      4    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2734   72.9%  C:\WINDOWS\SYSTEM32\ntdll.dll
+     29    1.1%    C:\Program Files\nodejs\node.exe
+      3   10.3%      C:\Program Files\nodejs\node.exe
+      1   33.3%        LazyCompile: ~parseOptions C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\connection_string.js:204:22
+      1  100.0%          LazyCompile: ~MongoClient C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\mongo_client.js:62:16
+      1  100.0%            LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongoose\lib\connection.js:798:31
+      1   33.3%        LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\socket.io\dist\index.js:262:27
+      1  100.0%          Function: ^emit node:events:474:44
+      1  100.0%            LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1   33.3%        Function: ^isUint8Array node:internal/util/types:13:22
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:668:38
+      1    3.4%      LazyCompile: ~wrapfunction C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\depd\index.js:413:23
+      1  100.0%        Function: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\body-parser\index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    3.4%      LazyCompile: ~throwIfUnsupportedURLProtocol node:internal/modules/esm/resolve:1032:39
+      1  100.0%        LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1039:24
+      1  100.0%          Function: ^resolve node:internal/modules/esm/loader:509:16
+      1  100.0%            Function: ^getModuleJob node:internal/modules/esm/loader:242:21
+      1    3.4%      LazyCompile: ~resolvePossibleLambda C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:527:56
+      1  100.0%        LazyCompile: ~compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1  100.0%          LazyCompile: ~compileChildren C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      1  100.0%            LazyCompile: ~compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    3.4%      LazyCompile: ~realpathSync node:fs:2412:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    3.4%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%      LazyCompile: ~onResponseHeaders C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\compression\index.js:140:47
+      1  100.0%        LazyCompile: ~writeHead C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\on-headers\index.js:28:29
+      1  100.0%          LazyCompile: ~_implicitHeader node:_http_server:264:68
+      1  100.0%            LazyCompile: ~end C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\compression\index.js:92:28
+      1    3.4%      LazyCompile: ~next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+      1  100.0%        LazyCompile: ~lex C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      1  100.0%          LazyCompile: ~lex C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      1  100.0%            LazyCompile: ~lex C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:295:25
+      1    3.4%      LazyCompile: ~get isReadable C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\sdam\server_description.js:95:19
+      1  100.0%        LazyCompile: ~TopologyDescription C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\sdam\topology_description.js:29:16
+      1  100.0%          LazyCompile: ~Topology C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\sdam\topology.js:41:16
+      1  100.0%            LazyCompile: ~createTopology C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\operations\connect.js:44:24
+      1    3.4%      LazyCompile: ~exports.find C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\@mapbox\node-pre-gyp\lib\pre-binding.js:17:24
+      1  100.0%        Function: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\bcrypt\bcrypt.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    3.4%      LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%        LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1  100.0%          LazyCompile: ~write_ node:_http_outgoing:730:16
+      1  100.0%            LazyCompile: ~end node:_http_outgoing:833:45
+      1    3.4%      LazyCompile: ~command C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\cmap\connection.js:251:12
+      1  100.0%        LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\cmap\connect.js:78:43
+      1  100.0%          LazyCompile: ~prepareHandshakeDocument C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\cmap\connect.js:146:34
+      1  100.0%            LazyCompile: ~performInitialHandshake C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\cmap\connect.js:62:33
+      1    3.4%      LazyCompile: ~assignSocket node:_http_server:239:62
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    3.4%      LazyCompile: ~addListener node:events:622:58
+      1  100.0%        LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:134:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%      LazyCompile: ~_write C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\cmap\message_stream.js:31:11
+      1  100.0%        LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%          LazyCompile: ~_write node:internal/streams/writable:283:16
+      1  100.0%            LazyCompile: ~Writable.write node:internal/streams/writable:333:36
+      1    3.4%      LazyCompile: ~_setClient C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongoose\lib\connection.js:858:20
+      1  100.0%        LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongoose\lib\connection.js:809:20
+      1  100.0%          LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\utils.js:411:13
+      1  100.0%            LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\mongo_client.js:134:58
+      1    3.4%      LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/modules/esm/translators:231:36
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:192:34
+      1    3.4%      LazyCompile: ~Level C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\log4js\lib\levels.js:16:14
+      1  100.0%        LazyCompile: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\log4js\lib\levels.js:52:22
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~addLevels C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\log4js\lib\levels.js:49:19
+      1    3.4%      LazyCompile: ~<anonymous> file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/yargs/build/lib/yargs-factory.js:1461:16
+      1  100.0%        LazyCompile: ~<anonymous> file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/yargs/build/lib/yargs-factory.js:1176:39
+      1  100.0%          LazyCompile: ~maybeAsyncResult file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/yargs/build/lib/utils/maybe-async-result.js:2:33
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/yargs/build/lib/yargs-factory.js:1175:21
+      1    3.4%      Function: ~<anonymous> node:internal/modules/cjs/helpers:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1    3.4%      Function: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\mongodb\lib\connection_string.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.4%      Function: ~<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\color-support\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.4%      Function: ^createFunctionContext C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:216:56
+      1  100.0%        Function: ^compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1  100.0%          LazyCompile: ~compileInput C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1  100.0%            LazyCompile: ~ret C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      1    3.4%      Function: ^compression C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\compression\index.js:59:31
+      1  100.0%        LazyCompile: *trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      1  100.0%          LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      1  100.0%            Function: ^strategy.pass C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\passport\lib\middleware\authenticate.js:345:31
+      1    3.4%      Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      1  100.0%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            Function: ^_write node:internal/streams/writable:283:16
+      1    3.4%      Function: ^Writable.write node:internal/streams/writable:333:36
+      1  100.0%        Function: ^_writeRaw node:_http_outgoing:344:19
+      1  100.0%          Function: ^_send node:_http_outgoing:319:49
+      1  100.0%            Function: ^end node:_http_outgoing:833:45
+      1    3.4%      Function: ^Minimatch C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\minimatch\minimatch.js:163:15
+      1  100.0%        Function: ^setopts C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\glob\common.js:48:18
+      1  100.0%          Function: ^Glob C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\glob\glob.js:117:15
+      1  100.0%            Function: ^glob C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\glob\glob.js:62:15
+
+    926   24.7%  C:\Program Files\nodejs\node.exe
+    660   71.3%    C:\Program Files\nodejs\node.exe
+     93   14.1%      Function: ^compileFunction node:vm:308:25
+     92   98.9%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     92  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+     89   96.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      3    3.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.1%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     78   11.8%      Function: ^moduleStrategy node:internal/modules/esm/translators:110:56
+     78  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:279:28
+     78  100.0%          C:\Program Files\nodejs\node.exe
+     58    8.8%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     58  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     43   74.1%          Function: ^Socket._writeGeneric node:net:769:42
+     43  100.0%            Function: ^Socket._write node:net:806:35
+     11   19.0%          LazyCompile: *_write node:internal/streams/writable:283:16
+     11  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+      4    6.9%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      4  100.0%            Function: ^_write node:internal/streams/writable:283:16
+     25    3.8%      Function: ^cpus node:os:133:14
+     25  100.0%        Function: ^getInfo file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/src/controllers/infoController.js:4:17
+     25  100.0%          Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\layer.js:86:49
+     25  100.0%            Function: ^next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\route.js:116:16
+     24    3.6%      Function: ^realpathSync node:fs:2412:22
+     20   83.3%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+     19   95.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     17   89.5%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2   10.5%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1    5.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4   16.7%        Function: ^finalizeResolution node:internal/modules/esm/resolve:391:28
+      4  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:966:23
+      4  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1039:24
+     23    3.5%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     14   60.9%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     12   85.7%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     12  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   14.3%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   50.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      9   39.1%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      9  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      8   88.9%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   11.1%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     23    3.5%      C:\Program Files\nodejs\node.exe
+      3   13.0%        LazyCompile: *pushSource C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      3  100.0%          Function: ^append C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      3  100.0%            LazyCompile: *compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2    8.7%        Function: ^scopedId C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\ast.js:14:32
+      2  100.0%          Function: ^PathExpression C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:289:42
+      1   50.0%            LazyCompile: *accept C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:101:26
+      1   50.0%            Function: ^accept C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:101:26
+      2    8.7%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   50.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    4.3%        LazyCompile: ~translatePeerCertificate node:_tls_common:125:34
+      1  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:125:34
+      1  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+      1    4.3%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1    4.3%        LazyCompile: ~parse C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\dotenv\lib\main.js:8:16
+      1  100.0%          LazyCompile: ~config C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\dotenv\lib\main.js:55:17
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/src/config.js:1:1
+      1    4.3%        LazyCompile: ~module.exports.get_napi_build_versions_raw C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\@mapbox\node-pre-gyp\lib\util\napi.js:140:54
+      1  100.0%          LazyCompile: ~module.exports.validate_package_json C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\@mapbox\node-pre-gyp\lib\util\napi.js:46:48
+      1  100.0%            LazyCompile: ~validate_config C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\@mapbox\node-pre-gyp\lib\util\versioning.js:195:25
+      1    4.3%        LazyCompile: ~match C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\layer.js:110:39
+      1  100.0%          Function: ^matchLayer C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:583:20
+      1  100.0%            Function: ^next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      1    4.3%        LazyCompile: ~join node:path:421:7
+      1  100.0%          LazyCompile: ~RollingFileWriteStream C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\streamroller\lib\RollingFileWriteStream.js:40:14
+      1  100.0%            LazyCompile: ~RollingFileStream C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\streamroller\lib\RollingFileStream.js:5:14
+      1    4.3%        LazyCompile: ~J file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/@faker-js/faker/dist/esm/chunk-ACGYMUXC.mjs:7:7635
+      1  100.0%          LazyCompile: ~ue file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/@faker-js/faker/dist/esm/chunk-ACGYMUXC.mjs:12:3381
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/nicol/Desktop/Curso%20-%20Full%20Stack/Backend/Desafios/Desafio14/ServerNode/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    4.3%        LazyCompile: *quotedString C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      1  100.0%          Function: ^pushSource C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      1  100.0%            Function: ^append C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1    4.3%        LazyCompile: *parse C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\minimatch\minimatch.js:413:9
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            Function: ^<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\minimatch\minimatch.js:222:19
+      1    4.3%        LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:130:39
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            Function: ^objectLiteral C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:123:40
+      1    4.3%        Function: ^write_ node:_http_outgoing:730:16
+      1  100.0%          Function: ^end node:_http_outgoing:833:45
+      1  100.0%            Function: ^end C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-session\index.js:250:27
+      1    4.3%        Function: ^toNamespacedPath node:path:618:19
+      1  100.0%          Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    4.3%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    4.3%        Function: ^set C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\application.js:359:23
+      1  100.0%          Function: ^enabled C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\application.js:438:31
+      1  100.0%            Function: ^render C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\application.js:548:29
+      1    4.3%        Function: ^quotedString C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      1  100.0%          Function: ^pushSource C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      1  100.0%            Function: ^compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    4.3%        Function: ^<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\minimatch\minimatch.js:222:19
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            Function: ^make C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\minimatch\minimatch.js:188:8
+     19    2.9%      Function: ^statSync node:fs:1530:18
+     14   73.7%        Function: ^tryStat C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\view.js:174:17
+     14  100.0%          Function: ^resolve C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\view.js:146:42
+     14  100.0%            Function: ^lookup C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\view.js:104:40
+      4   21.1%        Function: ^tryStatSync node:internal/modules/esm/resolve:184:3
+      3   75.0%          Function: ^finalizeResolution node:internal/modules/esm/resolve:391:28
+      3  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:966:23
+      1   25.0%          Function: ^packageResolve node:internal/modules/esm/resolve:875:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:966:23
+      1    5.3%        Function: ^fileExists node:internal/modules/esm/resolve:283:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:299:27
+      1  100.0%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:875:24
+     17    2.6%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     15   88.2%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   20.0%          Function: ~<anonymous> node:crypto:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   13.3%          Function: ~<anonymous> node:tls:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   13.3%          Function: ~<anonymous> node:internal/child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   13.3%          Function: ~<anonymous> node:http:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   13.3%          Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    6.7%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      1    6.7%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      1    6.7%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    6.7%          Function: ~<anonymous> node:assert:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:252:58
+      1    5.9%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     12    1.8%      Function: ^initialize C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\passport\lib\middleware\initialize.js:51:29
+      8   66.7%        LazyCompile: *trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      8  100.0%          LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      8  100.0%            Function: ^session C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-session\index.js:179:26
+      4   33.3%        Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\layer.js:86:49
+      4  100.0%          Function: ^trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      2   50.0%            LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      2   50.0%            Function: ^<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:280:64
+     10    1.5%      LazyCompile: *compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      4   40.0%        LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      4  100.0%          LazyCompile: *step C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      3   75.0%            Function: ^<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      1   25.0%            LazyCompile: *<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      2   20.0%        LazyCompile: *compileChildren C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      2  100.0%          LazyCompile: *compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *compileChildren C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      2   20.0%        Function: ^compileInput C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      2  100.0%          Function: ^ret C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      2  100.0%            Function: ^ExpressHandlebars._renderTemplate C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-handlebars\dist\express-handlebars.js:321:60
+      2   20.0%        Function: ^compileChildren C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      2  100.0%          LazyCompile: *compile C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1   50.0%            Function: ^compileInput C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1   50.0%            Function: ^compileChildren C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      9    1.4%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      9  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+      9  100.0%          Function: ^Socket._writev node:net:801:36
+      9  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+      8    1.2%      Function: ^session C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express-session\index.js:179:26
+      5   62.5%        Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\layer.js:86:49
+      5  100.0%          Function: ^trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      3   60.0%            Function: ^<anonymous> C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:280:64
+      2   40.0%            LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      3   37.5%        LazyCompile: *trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      3  100.0%          LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      3  100.0%            Function: ^urlencodedParser C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\body-parser\lib\types\urlencoded.js:79:36
+      7    1.1%      LazyCompile: *next C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:177:16
+      6   85.7%        Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:136:31
+      4   66.7%          Function: ^router C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:46:18
+      3   75.0%            Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\layer.js:86:49
+      1   25.0%            LazyCompile: *trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      2   33.3%          Function: ^handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\application.js:165:29
+      2  100.0%            Function: ^app C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\express.js:38:21
+      1   14.3%        LazyCompile: *handle C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:136:31
+      1  100.0%          Function: ^router C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:46:18
+      1  100.0%            LazyCompile: *trim_prefix C:\Users\nicol\Desktop\Curso - Full Stack\Backend\Desafios\Desafio14\ServerNode\node_modules\express\lib\router\index.js:293:23
+      7    1.1%      Function: ^readSync node:fs:684:18
+      6   85.7%        Function: ^tryReadSync node:fs:429:21
+      6  100.0%          Function: ^readFileSync node:fs:450:22
+      5   83.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1   16.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1   14.3%        LazyCompile: ~tryReadSync node:fs:429:21
+      1  100.0%          LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%            Function: ^cjsPreparseModuleExports node:internal/modules/esm/translators:192:34
+
